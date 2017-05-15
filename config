@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# distro
+DISTRO="xenial"
+
+# country
+COUNTRY="US"
+
+# locales
+LOCALE="en_US.UTF-8"
+
+# keymap
+KEYMAP="us"
+
+# network
+
+# could be cool to make the bonding working
+#BONDING="false"
+#SLAVE_ETH="ens2f0 ens2f1"
+
+DHCP="true"
+
+INTERFACE="ens2f0"
+IP="192.168.0.2"
+NETMASK="255.255.255.0"
+GW="192.168.0.1"
+DNS="192.168.0.1"
+
+# preseed file
+URL="http://192.168.0.1/preseed.cfg"
+
+# hostname and domain
+HOSTNAME="compute-lab-01"
+DOMAIN="totoro.com"
+
+# user & password
+USER="ubuntu"
+#totoro1234
+PASSWORD='$6$yjn3twGFMSXp3C$UWXMoJ7.a5u0sacwCgtCmrkBM3gqWZUy7xPwH9QOt./2Qw.zk4h41iyywDZH3hN5wm4hzD/T/u4iyDwd1kYJM0'
+
+# timezone
+TIMEZONE="Europe/Copenhagen"
+
+# ntp
+NTP=0.arch.pool.ntp.org
+
+# LVM
+LVM_DISK="/dev/sda /dev/sdb"
+
+# VG
+OS_DISK_VG="/dev/sda3"
+DATA_DISK_VG="/dev/sdb1"
+DATA_VG="LocalDisk"
+
+# GRUB
+GRUB_DISK="/dev/sda"
